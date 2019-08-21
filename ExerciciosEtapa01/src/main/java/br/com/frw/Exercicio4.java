@@ -2,7 +2,7 @@ package br.com.frw;
 
 import java.util.Scanner;
 
-public class Exercicio3 {
+public class Exercicio4 {
 
     public static void main(String[] args) {
 
@@ -32,13 +32,23 @@ public class Exercicio3 {
         System.out.println("Digite a pontuação da 3ª Prova: ");
         prova3 = entrada.nextFloat();
 
-        notaTotal = atividade1 + atividade2 + prova1 + prova2 + prova3;
+        notaTotal = atividade1 + atividade2 + prova1 + prova2 + (prova3 * 2);
+
+        if(notaTotal > 100.0){
+
+            notaTotal = 100F;
+            System.out.println("Nota Total :" + notaTotal);
+        }
+        else{
+            System.out.println("Nota Total :" + notaTotal);
+        }
 
         if(notaTotal >= 60.0){
             System.out.println("Aprovado");
         }
         else if(notaTotal >= 50 && notaTotal < 60){
             System.out.println("Prova de recuperação I");
+
         }
 
         else if(notaTotal >= 40 && notaTotal < 50){
@@ -50,7 +60,4 @@ public class Exercicio3 {
         }
 
     }
-
-
 }
-
