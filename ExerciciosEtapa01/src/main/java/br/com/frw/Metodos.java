@@ -69,7 +69,7 @@ public class Metodos {
         return aluno1;
     }
 
-    public void maiorNota(){
+    public void adicionarLista(){
 
         List<Aluno> lista = new ArrayList<Aluno>();
 
@@ -77,6 +77,20 @@ public class Metodos {
             lista.add(cadastroNotas());
         }
 
+    }
+
+    public void percorrerLista(){
+        Aluno aluno1 = new Aluno();
+        List<Aluno> lista = new ArrayList<Aluno>();
+        for (int i = 0; i < lista.size(); i++){
+
+            System.out.println(aluno1.nome);
+            System.out.println(aluno1.turma);
+            System.out.println(aluno1.total);
+            System.out.println(aluno1.status);
+
+
+        }
 
     }
 
